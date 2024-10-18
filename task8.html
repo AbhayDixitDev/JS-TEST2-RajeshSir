@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pyramid pattern of numbers</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>pyramid pattern of numbers</h1>
+    <button onclick="pyramid()">Start</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function pyramid(){
+        let num=4;
+        let str="";
+        for(let i=0;i<num;i++){
+            for(let j=4;j>i;j--){
+                str+=j+" ";
+                }
+                str+="<br>";
+            }
+            document.getElementById("result").innerHTML=str;
+        }
+    </script>
+</body>
+</html>

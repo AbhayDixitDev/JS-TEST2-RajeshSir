@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of a rectangle with input from user</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Area of a rectangle with input from user</h1>
+    <p>Enter the length of the rectangle:</p>
+    <input type="number" id="length" placeholder="Enter length">
+    <p>Enter the width of the rectangle:</p>
+    <input type="number" id="width" placeholder="Enter width">
+    <button onclick="calculateArea()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateArea() {
+            var length = parseFloat(document.getElementById("length").value);
+            var width = parseFloat(document.getElementById("width").value);
+            if (!isNaN(length) && !isNaN(width)) {
+                var area = length * width;
+                document.getElementById("result").textContent = "The area of the rectangle is " + area;
+            } else {
+                document.getElementById("result").textContent = "inputs are incorrect or in other type";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check string empty or not</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>check string empty or not</h1>
+    <p>Enter a string:</p>
+    <input type="text" id="str" placeholder="Enter a string">
+    <button onclick="checkString()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkString() {
+            var inputString = document.getElementById("str").value;
+            if (inputString.trim() === "") {
+                document.getElementById("result").textContent = "The string is empty.";
+            } else {
+                document.getElementById("result").textContent = "The string is not empty.";
+            }
+        }
+    </script>
+</body>
+</html>

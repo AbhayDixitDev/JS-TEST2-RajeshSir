@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>febonnaci series upto n given number</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>febonnaci series upto n given number</h1>
+    <button onclick="febo()">Start</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function febo(){
+            let num=Number(prompt("enter number"));
+            let a=0;
+            let b=1;
+            let c;
+            document.getElementById("result").innerHTML=a+" "+b+" ";
+            for(let i=0;i<num;i++){
+                c=a+b;
+                a=b;
+                b=c;
+                document.getElementById("result").innerHTML+=c+" ";
+            }
+           
+        }
+    </script>
+
+    
+</body>
+</html>

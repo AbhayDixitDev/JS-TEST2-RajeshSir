@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split a string and convert it into array of words</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>split a string and convert it into array of words</h1>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <button onclick="splitString()">Split</button>
+    <h1 id="result">Array of words:</h1>
+
+    <script>
+        function splitString(){
+            let str=document.getElementById("inputString").value;
+            let arr=str.split(" ");
+            document.getElementById("result").innerHTML+=arr;
+            // alert(arr);
+        }
+    </script>
+</body>
+</html>
